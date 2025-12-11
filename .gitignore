@@ -1,0 +1,35 @@
+# Build artifacts
+*.o
+*.a
+*.so
+*.exe
+*.out
+*.class
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+build/
+
+# Dependencies
+node_modules/
+venv/
+env/
+.venv/
+target/
+Cargo.lock
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# System
+.env
+.env.local
+*.log
+*.tmp
