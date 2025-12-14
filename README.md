@@ -1,62 +1,99 @@
-# Academia Nest Website
+# Academia Nest
 
-A static, multi-page marketing site for the fictional "Academia Nest" learning platform. It highlights course offerings, blog posts, team members, and includes basic signup/login/feedback flows styled with Bootstrap and custom CSS.
+A static, multi-page marketing website for an online learning platform. Academia Nest showcases course offerings, blog content, team members, and provides user authentication flows—all built with HTML, CSS, JavaScript, and Bootstrap 5.
 
-## Features
-- Landing, courses, blog, about, contact, FAQ, privacy, checkout, feedback, signup, and login pages.
-- Responsive layouts leveraging Bootstrap 5 and Font Awesome icons via CDN.
-- Course and blog grids with imagery for featured content.
-- Simple client-side validation for signup/login forms.
-- Shared header/footer navigation with social links and repeated CTAs.
+## Description
 
-## Structure
+Academia Nest is a responsive static website designed for an educational technology platform. The site includes:
+
+- **Home Page** – Landing page with featured courses and call-to-action sections
+- **Courses** – Full course catalog with enrollment options
+- **Blog** – Curated educational blog links
+- **About Us** – Team member profiles and company information
+- **Contact** – Contact form with Google Maps integration
+- **User Authentication** – Signup and login pages with client-side validation
+- **Checkout** – Course enrollment checkout flow
+- **FAQ & Support** – Frequently asked questions and feedback forms
+- **Privacy Policy** – Terms and privacy information
+
+## Project Structure
+
 ```
-AcademiaNest/ICT/     # duplicate copy of the site assets (mirrors ICT/)
-ICT/                  # primary working copy
-  Home.html           # landing page
-  Courses.html        # featured/all courses grid
-  Blog.html           # curated blog links
-  Aboutus.html        # team overview
-  ContactUs.html      # contact form + Google Maps embed
-  Checkout.html       # static cart/checkout summary
-  FAQs.html           # FAQ list
-  Feedback.html       # feedback form
-  PrivPol.html        # privacy policy
-  Signup.html         # signup form
-  Login.html          # login form
-  *.css               # page-specific styling
-  Signup.js           # signup validation
-  Login.js            # login validation
-  map.osm             # OSM extract (not referenced by the pages)
-  academia.png, P*.jpg, *.jpg # images used in the pages
+academia-nest/
+├── Home.html           # Landing page (entry point)
+├── Courses.html        # Course catalog
+├── Blog.html           # Blog links
+├── Aboutus.html        # Team overview
+├── ContactUs.html      # Contact form
+├── Checkout.html       # Checkout page
+├── FAQs.html           # FAQ page
+├── Feedback.html       # Feedback form
+├── PrivPol.html        # Privacy policy
+├── Signup.html         # User registration
+├── Login.html          # User login
+├── *.css               # Page-specific stylesheets
+├── Signup.js           # Signup form validation
+├── Login.js            # Login form validation
+├── academia.png        # Logo
+├── *.jpg               # Course and team images
+└── map.osm             # OpenStreetMap data
 ```
 
-## Dependencies
-- Runtime: modern browser; no build step.
-- CDNs: Bootstrap 5.3, Font Awesome 4/5, Google Fonts (Candara fallback).
-- Assets: local images under `ICT/` (duplicated under `AcademiaNest/ICT/`).
+## Installation
 
-## Getting Started
-1) Open `ICT/Home.html` directly in a browser, or serve the folder locally:
-```
-cd ICT
-python -m http.server 8000
-```
-Then visit http://localhost:8000/Home.html
+No build step or package installation required. This is a static HTML/CSS/JS project.
 
-## Development
-- Edit HTML/CSS/JS files in `ICT/`. The `AcademiaNest/ICT/` folder is a duplicate copy; keep `ICT/` as the source of truth.
-- Image paths are relative; keep assets alongside the pages.
-- Forms are static and currently alert on success; there is no backend or persistence.
+### Prerequisites
 
-## Usage Examples
-- Preview the courses catalog: open `ICT/Courses.html`.
-- Try form validation: open `ICT/Signup.html` or `ICT/Login.html` and submit an invalid email to see the client-side check.
-- Read blog links: open `ICT/Blog.html` and follow the external links.
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+- (Optional) Python 3 for local development server
 
-## Build / Run Instructions
-- No build required. Serve statically (e.g., `python -m http.server`) or open the HTML files directly.
-- There are no package installs or environment setup steps.
+### Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ApatheticMioz/AcademiaNest.git
+   cd AcademiaNest
+   ```
+
+2. Open directly in browser:
+   ```bash
+   # Simply open Home.html in your browser
+   open Home.html        # macOS
+   start Home.html       # Windows
+   xdg-open Home.html    # Linux
+   ```
+
+   Or serve locally with Python:
+   ```bash
+   python -m http.server 8000
+   # Visit http://localhost:8000/Home.html
+   ```
+
+## Usage
+
+- **Browse Courses**: Open `Courses.html` to view the full course catalog
+- **Try Form Validation**: Visit `Signup.html` or `Login.html` and test client-side validation
+- **Read Blog**: Open `Blog.html` for curated educational content links
+- **Contact**: Use `ContactUs.html` to view the contact form and embedded map
+
+## Technologies
+
+- **HTML5** – Semantic markup
+- **CSS3** – Custom styling with responsive design
+- **JavaScript** – Client-side form validation
+- **Bootstrap 5.3** – Responsive grid and components (via CDN)
+- **Font Awesome 4/5** – Icons (via CDN)
+- **Google Fonts** – Typography
+
+## Status
+
+**Archived / Refactored** – This project has been cleaned up and archived for reference.
 
 ## License
-MIT
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.

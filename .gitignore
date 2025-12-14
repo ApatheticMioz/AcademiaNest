@@ -17,7 +17,7 @@ venv/
 env/
 .venv/
 target/
-Cargo.lock
+vendor/
 
 # IDE/Editor
 .vscode/
@@ -25,11 +25,26 @@ Cargo.lock
 *.swp
 *.swo
 *~
-.DS_Store
-Thumbs.db
+*.code-workspace
 
 # System
+.DS_Store
+Thumbs.db
 .env
 .env.local
 *.log
 *.tmp
+~$*
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Documentation artifacts (keep README.md)
+*.pdf
+*.pptx
+*.rtf
+*.doc
+*.docx
